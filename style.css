@@ -5,7 +5,7 @@
 
 body {
     background-color: #D7E6EB;
-    font-family: monospace;
+    font-family: "Montserrat", sans-serif;
 }
 
 header h1 {
@@ -54,12 +54,22 @@ button {
 
     width: 800px;
     height: 800px;
+    border-radius: 20px;
 }
 
 #div_questions {
     background-color: #85C1E9;
     width: 700px;
     margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+center input {
+    border: 0;
+    border-radius: 5px;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
 }
 
 .button {
@@ -101,12 +111,24 @@ footer p {
 }
 
 #div_information {
-    width: 500px;
-    margin: auto;
+    width: 600px;
+    margin: auto    ;
     background-color: #85C1E9;
     font-size: 20px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
 }
 
+#div_information h2 {
+    margin-top: 10px;
+    font-size: 2.2rem;
+}
+
+#div_information p {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
 
 #div_verifiedAnswer {
     width: 500px;
