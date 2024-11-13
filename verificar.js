@@ -1,14 +1,14 @@
 var special_words = ['CPU', 'ULA', 'Registradores', 'RAM', 'ROM', 'EPROM', 'FLASH', 'Memória de Massa', 'DMA', 'CS', 'Adress Bus', 'Data Bus', 'I5', 'I7', 'Dual Core', 'Quad Core'];
 
 var questions_list = [
-    'Qual é a sigla para Central Process Unit?',
-    'Um circuto digital que realiza operações lógicas e aritméticas. Qual é o nome deste componente?',
-    'Tipo de memória que se encontra no topo da hierarquia de memória',
-    'Tipo de memória volátil que tem como nome Random Acess Memory. Qual é a sigla deste componente?',
-    'Tipo de memória não volátil que oferece dados apenas para leitura',
-    'Tipo de memória não volátil que precisa ter seu chip exposto a luz ultravioleta para apagar seu conteúdo',
-    'Tipo particular de EEPROM que mantém as informações armazenadas sem a necessidade de uma fonte de energia elétrica',
-    'Tipo de memória que precisa ter seu conteúdo copiado na RAM para poder ser executado pela CPU',
+    'Parte do processador que realiza cálculos e processa instruções?',
+    'Circuito digital que executa cálculos matemáticos e operações lógicas?',
+    'Qual a memória local rápida do microprocessador, destinada ao armazenamento de dados e instruções?',
+    'Memória temporária onde os dados são armazenados quando o computador está ligado. Qual é a sigla deste componente?',
+    'Memória permanete, guarda os dados essenciais para o funcionamento do sistema, como a BIOS',
+    'Chip da memória do computador que armazena dados mesmo quando a energia é deligada',
+    'Não volátil. Mantém os dados armazenados mesmo quando não há energia elétrica, é rápida e durável, usada em SSDs, pen drives, cartão de memória. Qual a sigla desse componente?',
+    'Não volátil. Memória que tem como função armazenar grandes quantidades de dados a longo prazo. Qual a sigla?',
     'Permite que periféricos acessem diretamente a RAM sem ocupar processamento',
     'Também conhecido como Slave Select (SS). Usado para selecionar um ou um conjunto de circuitos que estão conectados no computador',
     'Grupo de linhas ou trilhas usadas para se referir a um endereço físico na memória. O número de trilhas determina a quantidade de endereços na memória física',
@@ -394,7 +394,7 @@ function verify() {
 
     if (answer != '') {
         // answer = answer.toLowerCase();
-        if (answer == special_words[cont_correctAnswer]) {
+        if (answer.toLowerCase() == special_words[cont_correctAnswer].toLowerCase()) {
             div_verifiedAnswer.classList.add('correctAnswer');
             div_verifiedAnswer.innerHTML = '<br>Resposta Correta!';
             cont_correctAnswer++;
